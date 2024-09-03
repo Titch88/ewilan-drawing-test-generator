@@ -9,6 +9,6 @@ jobs:
       - run:
           name: "install deps"
           command: "npm install"
-      - run 
+      - run:
           name: "run linter"
           command: "npm check-lint"
