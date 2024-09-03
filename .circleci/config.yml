@@ -1,9 +1,10 @@
 version: 2.1
 
 jobs:
-  commit-workflow:
+  commit:
     docker:
       - image: cimg/node:current
+
     steps:
       - checkout
       - run:
@@ -12,3 +13,8 @@ jobs:
       - run:
           name: "run linter"
           command: "npm check-lint"
+
+workflows:
+  commit-workflow: 
+    jobs:
+      - commit
