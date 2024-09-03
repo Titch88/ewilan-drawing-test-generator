@@ -1,0 +1,23 @@
+{
+  "name": "drawing-test-generator",
+  "packageManager": "yarn@4.2.2",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.2",
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0"
+  },
+  "scripts": {
+    "start": "tsx index.ts",
+    "check-lint" : "eslint ."
+  }
+}
