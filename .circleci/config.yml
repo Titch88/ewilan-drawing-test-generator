@@ -1,0 +1,20 @@
+version: 2.1
+
+jobs:
+  commit:
+    docker:
+      - image: cimg/node:current
+
+    steps:
+      - checkout
+      - run:
+          name: "install deps"
+          command: "npm install"
+      - run:
+          name: "run linter"
+          command: "npm run check-lint"
+
+workflows:
+  commit-workflow: 
+    jobs:
+      - commit
