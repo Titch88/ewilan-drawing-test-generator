@@ -12,7 +12,7 @@ jobs:
           command: "npm install"
       - run:
           name: "run linter"
-          command: "npm check-lint"
+          command: "npm run check-lint"
 
 workflows:
   commit-workflow: 
